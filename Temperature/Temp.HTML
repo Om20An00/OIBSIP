@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Temperature Converter</h1>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <label for="temperature">Enter temperature:</label>
+        <input type="text" id="temperature" name="temperature" /><br />
+
+        <label for="unit">Choose unit:</label>
+        <select id="unit" name="unit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select><br />
+
+        <button type="button" onclick="convertTemperature()">Convert</button><br />
+
+        <div id="result"></div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Temperature Converter. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
